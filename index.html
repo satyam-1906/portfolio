@@ -16,13 +16,13 @@
             <h4>Satyam Samal</h4>
         </div>
         <div class="pages">
-            <a href="#">
-            <button class="btn" type="button">About</button>
+            <a>
+            <button type="button" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About</button>
             </a>
-            <a href="#">
+            <a>
             <button type="button">Work</button>
             </a>
-            <a href="#">
+            <a>
             <button type="button">Contact</button>
             </a>
         </div>
@@ -58,7 +58,7 @@
         <img class="curly" src="curly.svg" alt="#">
         <div class="text1">I am a Computer Science Engineer, an AI/ML enthusiast, with keen interest in Computer Vision projects and innovative system design, currently studying at Indian Institute of Information Technology, Nagpur</div>
     </div>
-    <div class="about">
+    <div id="about" class="about">
         <h3>About</h3>
         <div class="main">
             <div class="child1 pic">
