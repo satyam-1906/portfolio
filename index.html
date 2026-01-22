@@ -17,34 +17,37 @@
         </div>
         <div class="pages">
             <a>
+            <button type="button" onclick="document.getElementById('hero').scrollIntoView({behavior:'smooth'})">Home</button>
+            </a>
+            <a>
             <button type="button" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About</button>
             </a>
             <a>
-            <button type="button">Work</button>
+            <button type="button" onclick="document.getElementById('project').scrollIntoView({behavior:'smooth'})">Work</button>
             </a>
             <a>
-            <button type="button">Contact</button>
+            <button type="button" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</button>
             </a>
         </div>
     </div>
-    <div class="hero">
+    <div class="hero" id="hero">
         <div class="social">
-            <a href="https://www.instagram.com/verses.n.words/" >
+            <a href="https://www.instagram.com/verses.n.words/" target="_blank">
                 <button type="button">
                 <i class="fa-brands fa-instagram"></i>
                 </button>
             </a>
-            <a href="https://www.linkedin.com/in/satyamsamal18">
+            <a href="https://www.linkedin.com/in/satyamsamal18" target="_blank">
                 <button type="button">
                 <i class="fa-brands fa-linkedin"></i>
                 </button>
             </a>
-            <a href="https://github.com/satyam-1906">
+            <a href="https://github.com/satyam-1906" target="_blank">
                 <button type="button">
                 <i class="fa-brands fa-github"></i>
                 </button>
             </a>
-            <a href="https://wa.me/919692509119">
+            <a href="https://wa.me/919692509119" target="_blank">
                 <button type="button">
                 <i class="fa-brands fa-whatsapp"></i>
                 </button>
@@ -65,7 +68,22 @@
                 <img src="prof.jpg" alt="#">
             </div>
             <div class="child1 info">
-                <div class="child2 big" id="big"></div>
+                <div class="child2 big" id="big">
+                    <h3 class="aboutme me1">
+                        I’m Satyam Samal, a B.Tech CSE student specializing in Data Science and Machine Learning at IIIT Nagpur, Maharashtra. I completed my 10th from St. Paul’s School and 12th from Delhi Public School in Odisha, and I’m originally from Rourkela, Odisha.
+                    </h3>
+                    <h3 class="aboutme me2">
+                        I’m an AI & ML enthusiast with a strong interest in Computer Vision and building intelligent, real-world applications using data and modern machine learning techniques.
+                    </h3>
+                    <div class="basics">
+                        <div class="interests">
+                            Interests: Computer Vision, AI and ML, Deep Learning, Gen AI, Neural Networks, LLM, Astrophysics
+                        </div>
+                        <div class="hobbies">
+                            Hobbies: Music, Consuming productive content, Writing, Graphic Desigining, Reading, Poetry
+                        </div>
+                    </div>
+                </div>
                 <div class="child2 smalls">
                     <div class="child3 small1" id="small1">
                         <h3 class="langFram">Languages and Frameworks</h3>
@@ -138,7 +156,73 @@
             </div>
         </div>
     </div>
-    <div class="projects"></div>
+    <div class="projects" id="project">
+        <h3 class="projectsHeading">Projects</h3>
+        <div class="container">
+            <div class="cards" id="card1">
+                <div class="overlay"></div>
+                <div class="preview">
+                    <img src="ss1.png" alt="#">
+                </div>
+                <div class="explanation">
+                    <a href="https://github.com/satyam-1906/handSign-recognition.git" target="_blank"><h3 class="projectName">
+                        Real Time sign language Interpretation
+                    </h3>
+                    </a>
+                    <h3 class="explained">
+                        Built a hand sign recognition system by converting gesture images into pixel-based data, training a machine learning model to classify the signs, with live camera feed input for real-time predictions.
+                    </h3>
+                </div>
+            </div>
+            <div class="cards" id="card2">
+                <div class="overlay"></div>
+                <div class="preview">
+                    <img src="ss2.png" alt="#">
+                </div>
+                <div class="explanation">
+                    <a href="https://github.com/satyam-1906/ar-gemini.git" target="_blank"><h3 class="projectName">
+                        Gesture controlled prompting interface
+                    </h3>
+                    </a>
+                    <h3 class="explained">
+                        Built a gesture-controlled text input system using OpenCV and MediaPipe, mapping finger angles and pinch gestures to type hands-free, with prompts sent to the Gemini API for real-time responses.
+                    </h3>
+                </div>
+            </div>
+            <div class="cards" id="card3">
+                <div class="overlay"></div>
+                <div class="preview">
+                    <img src="ss3.png" alt="#">
+                </div>
+                <div class="explanation">
+                    <a href="https://github.com/satyam-1906/ascii-art.git" target="_blank"><h3 class="projectName">
+                        Real Time ASCII art conversion
+                    </h3>
+                    </a>
+                    <h3 class="explained">
+                        A real-time computer vision project where I use hand gestures to control ASCII art. Right-hand finger taps change the color modes, while left-hand finger taps adjust the resolution.
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h3 class="projectsHeading">Contact</h3>
+        <div class="contactBox">
+            <div class="data">
+                <h3 class="t1">Contact Number : </h3>
+                <p class="number">+91 9692509119</p>
+                <h3 class="t2">Email ID : </h3>
+                <p class="eid">scientificsatyam1906@gmail.com</p>
+                <button type="submit" class="send">Send</button>
+            </div>
+            <div class="message">
+                <input type="email" name="email" id="email" class="email" placeholder="Your Email ID">
+                <input type="text" name="msg" id="msg" class="msg" placeholder="Write whatever is on your mind">
+            </div>
+        </div>
+    </div>
 </body>
-<script src="animateIn.js"></script>
+<script src="about.js"></script>
+<script src="projects.js"></script>
 </html>

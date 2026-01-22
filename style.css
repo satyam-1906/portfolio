@@ -9,7 +9,6 @@ body {
     background-color: #F1F3E0;
     overflow-x: hidden;
 }
-
 .head{
     height: 10%;
     width: 100%;
@@ -231,11 +230,6 @@ body {
     transform: translate(-50%, -50%);
     text-shadow: 0 2px 15px #A1BC98;
 }
-.projects{
-    height: 100%;
-    width: 100%;
-    background-color:#F1F3E0;
-}
 @keyframes pulse {
   0% {
     transform: translateY(0px);
@@ -338,6 +332,46 @@ body {
     background-color: #D2DCB6;
     box-shadow: 0 4px 10px #D2DCB6;
 }
+.aboutme{
+    width: calc(100%-3rem);
+    height: fit-content;
+    padding: 1.1rem 1.5rem 0 1.5rem;
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #778873;
+    text-shadow: 0 2px 10px #778873;
+    margin: 0;
+}
+.me2{
+    padding-bottom: 1.1rem;
+}
+.basics{
+    position: relative;
+    display: flex;
+    width: calc(100%-3rem);
+    flex-direction: row;
+    padding: 0 1.5rem 0 1.5rem;
+    gap: 1rem;
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #778873;
+}
+.interests{
+    position: relative;
+    flex: 1;
+    font-size: 1.2rem;
+    padding-bottom: 1.1rem;
+}
+.hobbies{
+    position: relative;
+    flex: 1;
+    font-size: 1.2rem;
+    padding-bottom: 1.1rem;
+}
 .smalls{
     flex: 1;
     display: flex;
@@ -407,4 +441,227 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #778873;
+}
+.projects{
+    height: 100%;
+    width: 100%;
+    background-color:#F1F3E0;
+    overflow: hidden;
+}
+.projectsHeading{
+    font-size: 3rem;
+    font-family: "Annie Use Your Telescope", cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: #A1BC98;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 2px 15px #A1BC98;
+}
+.container{
+    height: 75%;
+    width: 85%;
+    position: relative;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 2.5rem;
+    flex-direction: row;
+    display: flex;
+}
+.cards{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 10px #D2DCB6;
+    border-radius: 1.1rem;
+}
+.preview{
+    flex: 1;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 1.1rem 1.1rem 0 0;
+    margin: 0;
+}
+.preview>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.explanation{
+    flex: 1;
+    background-color: #D2DCB6;
+    margin: 0;
+    border-radius: 0 0 1.1rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.overlay{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 10%;
+    background-image: linear-gradient(to top, #D2DCB6, rgba(0, 0, 0, 0));
+}
+.bringIn5{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.8s ease-in-out;
+}
+.bringOut5{
+    transform: translateX(-15%);
+    opacity: 0;
+    transition: 0.8s ease-in-out;
+}
+.bringIn6{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.8s ease-in-out;
+}
+.bringOut6{
+    transform: translateX(-30%);
+    opacity: 0;
+    transition: 0.8s ease-in-out;
+}
+.bringIn7{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.8s ease-in-out;
+}
+.bringOut7{
+    transform: translateX(-45%);
+    opacity: 0;
+    transition: 0.8s ease-in-out;
+}
+.cards:hover{
+    scale: 1.05;
+    transition: 0.3s ease-in-out;
+}
+.projectName{
+    position: relative;
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #778873;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    flex: 1;
+    margin: 0;
+}
+.explained{
+    position: relative;
+    flex: 40;
+    padding: 0 1.5rem 1rem 1.5rem;
+    margin: 0;
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #778873;
+}
+a{
+    text-decoration: none;
+}
+.contact{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.contactBox{
+    height: 60%;
+    width: 40%;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #D2DCB6;
+    display: flex;
+    flex-direction: row;
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #778873;
+    border-radius: 1.1rem;
+    box-shadow: 0 2px 10px #D2DCB6;
+}
+.data{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.message{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 1.5rem 0;
+}
+.email{
+    position: relative;
+    width: 100%;
+    height: 7%;
+    border-radius: 1.2rem;
+    text-align: center;
+    border-width: 3px;
+    border-color: #778873;
+    border-style: solid;
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #A1BC98;
+    box-shadow: 0 0 8px #778873 inset;
+}
+.msg{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 10%;
+    border-radius: 1.2rem;
+    text-align: center;
+    border-width: 3px;
+    border-color: #778873;
+    border-style: solid;
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #A1BC98;
+    box-shadow: 0 0 8px #778873 inset;
+    text-wrap: inherit;
+}
+.send{
+    position: relative;
+    margin: 0;
+    height: 10%;
+    width: 70%;
+    border-radius: 1.3rem;
+    border: 0px;
+    background-color: #A1BC98;
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #F1F3E0;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 10px #A1BC98;
+    transition: 0.2s ease-in-out;
+}
+.send:hover{
+    scale: 1.05;
+    transform: translateY(-2px);
+    transition: 0.2s ease-in-out;
+}
+.send:active{
+    background-color: #778873;
+}
+.data>h3{
+    margin: 0;
 }
