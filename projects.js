@@ -1,6 +1,6 @@
-const targetSection1 = document.getElementById('project');
+const targetSection = document.getElementById('project');
 
-const options1 = {
+const options = {
   root: null, 
   rootMargin: '0px', 
   threshold: 0.2
@@ -31,8 +31,8 @@ const callback1 = (entries, observer1) => {
   });
 };
 
-const observer1 = new IntersectionObserver(callback1, options1);
+const observer = new IntersectionObserver(callback1, options1);
 
-if (targetSection1) {
-  observer1.observe(targetSection1);
+if (targetSection) {
+  observer.observe(targetSection);
 }
